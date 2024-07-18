@@ -305,14 +305,14 @@ function closeNav() {
 
 async function getMealById(name) {
   let response = await fetch(
-    `http://www.themealdb.com/api/json/v1/1/lookup.php?i=${name}`
+    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${name}`
   );
   mealDataId = await response.json();
   selectedMeal = mealDataId.meals[0];
 }
 async function search(method, param, name = "a") {
   let response = await fetch(
-    `http://www.themealdb.com/api/json/v1/1/${method}.php?${param}=${name}`
+    `https://www.themealdb.com/api/json/v1/1/${method}.php?${param}=${name}`
   );
   data = await response.json();
 }
@@ -411,7 +411,7 @@ $("body").on("click", ".meal-card", async function () {
 
 async function GetCategory() {
   let response = await fetch(
-    `http://www.themealdb.com/api/json/v1/1/categories.php`
+    `https://www.themealdb.com/api/json/v1/1/categories.php`
   );
   CategoryData = await response.json();
 }
@@ -456,7 +456,7 @@ $("body").on("click", ".category-container-card", async function () {
 
 async function getMealsBy(param, value) {
   let response = await fetch(
-    `http://www.themealdb.com/api/json/v1/1/filter.php?${param}=${value}`
+    `https://www.themealdb.com/api/json/v1/1/filter.php?${param}=${value}`
   );
   data = await response.json();
 }
@@ -466,7 +466,7 @@ async function getMealsBy(param, value) {
 
 async function GetArea() {
   let response = await fetch(
-    `http://www.themealdb.com/api/json/v1/1/list.php?a=list`
+    `https://www.themealdb.com/api/json/v1/1/list.php?a=list`
   );
   areaData = await response.json();
 }
@@ -504,7 +504,7 @@ $("body").on("click", ".area-container-card", async function () {
 
 async function GetIngredients() {
   let response = await fetch(
-    `http://www.themealdb.com/api/json/v1/1/list.php?i=list`
+    `https://www.themealdb.com/api/json/v1/1/list.php?i=list`
   );
   ingredientsData = await response.json();
   ingredientsData = { meals: ingredientsData.meals.slice(0, 20) };
