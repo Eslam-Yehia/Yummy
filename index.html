@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logo (1).png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body class="bg-black text-light ps-5">
+    <!-- reload -->
+    <div class="loading position-fixed top-0 left-0 bg-black w-100 min-vh-100">
+      <div
+        class="d-flex justify-content-center align-items-center w-100 min-vh-100"
+      >
+        <i class="fa-solid fa-spin fa-spinner text-light fa-5x"></i>
+      </div>
+    </div>
+    <!-- nav -->
+    <nav>
+      <div
+        class="d-flex position-fixed top-0 slide-nav min-vh-100 bg-black nav-bg nav-side-bar"
+      >
+        <div
+          class="nav-content flex-column d-flex justify-content-between text-start text-white bg-black px-3 py-4 flex-grow-1"
+        >
+          <div class="nav-content-list">
+            <ul class="list-unstyled nav-content-ul">
+              <li class="cursor-pointer py-2 px-1 nav-content-list-item">
+                <a
+                  id="navSearch"
+                  class="text-decoration-none text-white w-100 d-block"
+                  >Search</a
+                >
+              </li>
+              <li class="cursor-pointer py-2 px-1 nav-content-list-item">
+                <a
+                  id="navCategory"
+                  class="text-decoration-none text-white w-100 d-block"
+                  >Categories</a
+                >
+              </li>
+              <li class="cursor-pointer py-2 px-1 nav-content-list-item">
+                <a
+                  id="navArea"
+                  class="text-decoration-none text-white w-100 d-block"
+                  >Area</a
+                >
+              </li>
+              <li class="cursor-pointer py-2 px-1 nav-content-list-item">
+                <a
+                  id="navIngredients"
+                  class="text-decoration-none text-white w-100 d-block"
+                  >Ingredients</a
+                >
+              </li>
+              <li class="cursor-pointer py-2 px-1 nav-content-list-item">
+                <a
+                  id="navContact"
+                  class="text-decoration-none text-white w-100 d-block"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-content-links">
+            <div class="nav-social-icon">
+              <a href="#" class="link-light link-underline-opacity-0">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="link-light link-underline-opacity-0">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="link-light link-underline-opacity-0">
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
+            <p>Copyright Â© 2019 All Rights Reserved</p>
+          </div>
+        </div>
+        <div
+          class="nav-show-bar d-flex flex-column align-content-center text-center justify-content-between py-4 px-2 bg-white"
+        >
+          <a href="./index.html" class="nav-logo text-decoration-none">
+            <img src="./images/logo (1).png" alt="" class="" />
+          </a>
+          <i
+            class="fa-solid fa-align-justify fa-2x nav-show-bar-icon text-black cursor-pointer change-nav"
+          ></i>
+          <div
+            class="d-flex justify-content-between align-items-center text-center gap-2 flex-column"
+          >
+            <a href="#home" class="link-dark text-decoration-none">
+              <i class="fa-solid fa-lg fa-globe"></i>
+            </a>
+            <a href="#home" class="link-dark text-decoration-none">
+              <i class="fa-solid fa-lg fa-share-nodes"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="pt-5 htmlContainer ps-3">
+      <div class="container">
+        <div class="row g-4" id="searchMeals"></div>
+      </div>
+    </section>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
